@@ -202,9 +202,10 @@ public final class SwiftCache {
         #if canImport(UIKit)
         let imageData = image.jpegData(compressionQuality: configuration.diskImageQuality) ?? Data()
         #elseif canImport(AppKit)
-        guard let cgImage = image.cgImage(forProposedRect: nil, context: nil, hints: nil) else { return }
-        let bitmapRep = NSBitmapImageRep(cgImage: cgImage)
-        guard let imageData = bitmapRep.representation(using: .jpeg, properties: [:]) else { return }
+        guard let cgImage = image.cgImage(forProposedRect: nil, context: nil, hints: nil),
+        let bitmapRep: NSBitmapImageRep
+              bitmapRep = NSBitmapImageRep(cgImage: cgImage),
+              let imageData = bitmapRep.representation(using: .jpeg, properties: [:]) else { return }
         #endif
         
         let entry = CacheEntry(image: image, timestamp: Date(), ttl: ttl, size: imageData.count)
@@ -255,9 +256,9 @@ public final class SwiftCache {
             #if canImport(UIKit)
             guard let data = image.jpegData(compressionQuality: self.configuration.diskImageQuality) else { return }
             #elseif canImport(AppKit)
-            guard let cgImage = image.cgImage(forProposedRect: nil, context: nil, hints: nil) else { return }
-            let bitmapRep = NSBitmapImageRep(cgImage: cgImage)
-            guard let data = bitmapRep.representation(using: .jpeg, properties: [:]) else { return }
+            guard let cgImage = image.cgImage(forProposedRect: nil, context: nil, hints: nil),
+                  let bitmapRep = NSBitmapImageRep(cgImage: cgImage),
+                  let data = bitmapRep.representation(using: .jpeg, properties: [:]) else { return }
             #endif
             
             let fileURL = self.diskCacheURL(for: key)
@@ -305,7 +306,7 @@ public final class SwiftCache {
             return date1 < date2
         }
         
-        var sizeToClean = self.calculateDiskSize()
+        var currentSize = self.calculateDiskSize()
         let targetSize = configuration.diskCacheLimit * 3 / 4 // Clean to 75%
         
         for fileURL in sortedFiles {
@@ -314,7 +315,7 @@ public final class SwiftCache {
             if let attributes = try? fileURL.resourceValues(forKeys: [.fileSizeKey]),
                let fileSize = attributes.fileSize {
                 try? fileManager.removeItem(at: fileURL)
-                sizeToClean -= Int64(fileSize)
+                currentSize -= Int64(fileSize)
             }
         }
     }
