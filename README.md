@@ -28,7 +28,7 @@ A modern, lightweight image caching library for iOS and macOS. Built with 100% A
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/sudhirgadhvi/SwiftCache", from: "1.0.0")
+    .package(url: "https://github.com/SudhirGadhvi/SwiftCache-SDK", from: "1.0.0")
 ]
 ```
 
@@ -112,9 +112,8 @@ SwiftCache.shared.configure { config in
 ## 📖 Documentation
 
 - [Getting Started Guide](Documentation/getting-started.md)
-- [Advanced Usage](Documentation/advanced-usage.md)
-- [API Reference](Documentation/api-reference.md)
 - [Migration from Kingfisher](Documentation/migration-guide.md)
+- [Demo App Example](DemoApp/)
 
 ## 🤝 Contributing
 
@@ -128,7 +127,8 @@ SwiftCache is released under the MIT License. See [LICENSE](LICENSE) for details
 
 **Sudhir Gadhvi**
 
-- GitHub: [@sudhirgadhvi](https://github.com/sudhirgadhvi)
+- GitHub: [@SudhirGadhvi](https://github.com/SudhirGadhvi)
+- LinkedIn: [Sudhir Gadhvi](https://www.linkedin.com/in/sudhirgadhvi/)
 
 ## 🙏 Acknowledgments
 

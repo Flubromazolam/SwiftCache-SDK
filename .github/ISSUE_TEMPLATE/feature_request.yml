@@ -1,0 +1,56 @@
+name: Feature Request
+description: Suggest a new feature for SwiftCache
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature!
+        
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve?
+      placeholder: I'm frustrated when...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How would you like this feature to work?
+    validations:
+      required: true
+      
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What alternative solutions have you considered?
+      
+  - type: textarea
+    id: example
+    attributes:
+      label: Example API
+      description: Show us how the API would look
+      render: swift
+      placeholder: |
+        imageView.sc.setImage(
+          with: url,
+          transform: .resize(width: 100)
+        )
+      
+  - type: dropdown
+    id: willing
+    attributes:
+      label: Are you willing to contribute this feature?
+      options:
+        - "Yes, I can submit a PR"
+        - "No, but I can help test it"
+        - "No, just suggesting"
+    validations:
+      required: true
+

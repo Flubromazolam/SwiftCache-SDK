@@ -156,7 +156,7 @@ dependencies: [
 
 // After
 dependencies: [
-    .package(url: "https://github.com/sudhirgadhvi/SwiftCache", from: "1.0.0")
+    .package(url: "https://github.com/SudhirGadhvi/SwiftCache-SDK", from: "1.0.0")
 ]
 ```
 
@@ -224,6 +224,6 @@ Based on our testing:
 
 ## Need Help?
 
-- GitHub Issues: [Report a bug](https://github.com/sudhirgadhvi/SwiftCache/issues)
-- Discussions: [Ask questions](https://github.com/sudhirgadhvi/SwiftCache/discussions)
+- GitHub Issues: [Report a bug](https://github.com/SudhirGadhvi/SwiftCache-SDK/issues)
+- GitHub Discussions: [Ask questions](https://github.com/SudhirGadhvi/SwiftCache-SDK/discussions)
 

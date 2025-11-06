@@ -29,24 +29,49 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
 
 ### Pull Requests
 
-1. Fork the repo and create your branch from `main`
-2. Follow the existing code style
-3. Add tests for new functionality
-4. Ensure all tests pass
-5. Update documentation
-6. Write a clear commit message
+**Important:** All contributions must go through pull requests. Direct pushes to `main` are not allowed.
+
+1. **Fork the repository** (don't clone directly)
+2. **Create your branch** from `main`: `git checkout -b feature/amazing-feature`
+3. **Follow the existing code style**
+4. **Add tests** for new functionality
+5. **Ensure all tests pass**: `swift test`
+6. **Update documentation** as needed
+7. **Commit your changes** with clear messages
+8. **Push to your fork**: `git push origin feature/amazing-feature`
+9. **Open a Pull Request** from your fork to the main repository
+10. **Wait for review** - PRs will be reviewed and merged by maintainers
+
+#### Pull Request Checklist
+
+- [ ] Code follows Swift style guidelines
+- [ ] Tests added and passing
+- [ ] Documentation updated
+- [ ] CHANGELOG.md updated (if applicable)
+- [ ] No breaking changes (or clearly documented)
+- [ ] Branch is up to date with main
 
 ## Development Setup
 
 ```bash
-# Clone your fork
-git clone https://github.com/YOUR_USERNAME/SwiftCache.git
-cd SwiftCache
+# Fork the repo on GitHub first, then:
+
+# Clone YOUR fork
+git clone https://github.com/YOUR_USERNAME/SwiftCache-SDK.git
+cd SwiftCache-SDK
+
+# Add upstream remote
+git remote add upstream https://github.com/SudhirGadhvi/SwiftCache-SDK.git
 
 # Open in Xcode
 open Package.swift
 
+# Create a feature branch
+git checkout -b feature/your-feature-name
+
 # Run tests
+swift test
+# OR
 xcodebuild test -scheme SwiftCache
 ```
 

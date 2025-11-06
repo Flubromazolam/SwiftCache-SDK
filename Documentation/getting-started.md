@@ -7,14 +7,14 @@
 Add SwiftCache to your project using Xcode:
 
 1. File → Add Package Dependencies
-2. Enter: `https://github.com/sudhirgadhvi/SwiftCache`
+2. Enter: `https://github.com/SudhirGadhvi/SwiftCache-SDK`
 3. Select version: `1.0.0` or later
 
 Or add to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/sudhirgadhvi/SwiftCache", from: "1.0.0")
+    .package(url: "https://github.com/SudhirGadhvi/SwiftCache-SDK", from: "1.0.0")
 ]
 ```
 
@@ -188,7 +188,7 @@ override func prepareForReuse() {
 
 ## Next Steps
 
-- [Advanced Usage](advanced-usage.md)
-- [API Reference](api-reference.md)
+- Check out the [Demo App](../DemoApp/) for complete examples
 - [Migration from Kingfisher](migration-guide.md)
+- Browse the source code for detailed API documentation
 
