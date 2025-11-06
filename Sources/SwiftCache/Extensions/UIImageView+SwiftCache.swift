@@ -12,8 +12,8 @@ import UIKit
 // MARK: - SwiftCache UIImageView Wrapper
 
 public struct SwiftCacheImageViewWrapper {
-    private weak var imageView: UIImageView?
-    private var currentToken: CancellationToken?
+    internal weak var imageView: UIImageView?
+    internal var currentToken: CancellationToken?
     
     init(imageView: UIImageView) {
         self.imageView = imageView
@@ -120,7 +120,9 @@ extension SwiftCacheImageViewWrapper {
     ) async throws -> UIImage {
         
         guard let imageView = imageView, let url = url else {
-            imageView?.image = placeholder
+            await MainActor.run {
+                imageView?.image = placeholder
+            }
             throw SwiftCacheError.invalidURL
         }
         
@@ -129,8 +131,12 @@ extension SwiftCacheImageViewWrapper {
             imageView.image = placeholder
         }
         
-        // Load image
-        let image = try await SwiftCache.shared.loadImage(from: url, cacheKey: cacheKey, ttl: ttl)
+        // Load image using continuation
+        let image = try await withCheckedThrowingContinuation { continuation in
+            SwiftCache.shared.loadImage(from: url, cacheKey: cacheKey, ttl: ttl) { result in
+                continuation.resume(with: result)
+            }
+        }
         
         // Set image with transition
         await MainActor.run {

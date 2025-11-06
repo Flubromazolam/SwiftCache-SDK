@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Initial release of SwiftCache
+- iOS demo app with SwiftUI example
 - Three-tier caching system (Memory → Disk → Network)
 - TTL (time-to-live) support with automatic expiration
 - UIImageView extension for easy integration (`imageView.sc.setImage()`)
@@ -35,6 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Performance metrics (hit rate, load times)
 - Image downscaling for large images
 - Thread-safe operations
+- Swift 6 language mode compatibility
 
 ### Platforms
 - iOS 14.0+
