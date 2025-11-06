@@ -134,5 +134,5 @@ Inspired by real-world challenges in building modern iOS apps.
 
 ---
 
-⭐️ If you like SwiftCache, give it a star on GitHub!
+⭐️ If you like SwiftCache, give it a star!
 
