@@ -160,7 +160,7 @@ This makes SwiftCache incredibly flexible - use your own cache backends, network
 
 ## 🗺️ Roadmap
 
-### ✅ v1.0.0 (Released - January 2025)
+### ✅ v1.0.0 (Released - November 2025)
 
 **Initial Release**
 - [x] Three-tier caching system (Memory → Disk → Network)
@@ -177,7 +177,7 @@ This makes SwiftCache incredibly flexible - use your own cache backends, network
 - [x] Zero external dependencies
 - [x] Image downscaling (iOS only)
 
-### ✅ v2.0.0 (Released - January 2025)
+### ✅ v2.0.0 (Released - November 2025)
 
 **Major Architecture Rewrite - Swift Concurrency & Design Patterns**
 - [x] **Actor-based architecture** - Pure Swift Concurrency
@@ -195,7 +195,7 @@ This makes SwiftCache incredibly flexible - use your own cache backends, network
 - [x] **Comprehensive tests** - 11 tests covering all features
 - [x] **Architecture guide** - Deep dive documentation
 
-### 🚧 v2.1.0 (Next Release - Q2 2025)
+### 🚧 v2.1.0
 
 **Reactive & Format Support**
 - [ ] **Combine Support** - Publishers for reactive programming
@@ -205,7 +205,7 @@ This makes SwiftCache incredibly flexible - use your own cache backends, network
 - [ ] **Network Reachability** - Pause downloads when offline
 - [ ] **Batch Operations** - Bulk prefetch/clear operations
 
-### 🔮 v2.2.0 (Q3 2025)
+### 🔮 v2.2.0 
 
 **Intelligence & UX**
 - [ ] **Prefetching API** - Intelligent prefetch with priority
@@ -215,7 +215,7 @@ This makes SwiftCache incredibly flexible - use your own cache backends, network
 - [ ] **Smart Eviction** - Usage-based cache management
 - [ ] **Request Coalescing** - Deduplicate simultaneous requests
 
-### 🎯 v3.0.0 (Major - Q4 2025)
+### 🎯 v3.0.0
 
 **Advanced Features & Cloud**
 - [ ] **Advanced Transformations** - Resize, crop, filters, effects
